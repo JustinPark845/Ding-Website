@@ -1,0 +1,433 @@
+@import url("//use.fontawesome.com/releases/v5.15.3/css/all.css");
+
+/* center */
+.center {
+    position:absolute;
+    margin-top:125px;
+    margin-left:250px;
+}
+
+/* lightbox */
+.lightbox {
+    position:absolute;
+    left:0;
+    top:0;
+    height:723px;
+    width:1441px;
+    z-index:2;
+    display:none;
+    /* background-color:black;
+    opacity:50%; */
+}
+.halflightbox {
+    position:absolute;
+    left:0;
+    top:0;
+    height:723px;
+    width:400px;
+    z-index:2;
+    display:none;
+    /* background-color:black;
+    opacity:50%; */
+}
+
+/* icon */
+.ding_icon {
+    position:absolute;
+    padding:50px;
+    padding-bottom:0;
+    margin-left: 44%;
+    height: 60px;
+    width: 60px;
+    top:40%;
+    z-index:1;
+    background-color:white;
+}
+.ding_icon:hover {
+    height:70px;
+    width:70px;
+    animation: ring .5s;
+    animation-iteration-count: 1;
+    transition:.25s;
+    margin-left:44%;
+    cursor:pointer;
+}
+@keyframes ring {
+    0% { transform: translate(10px, 0px) rotate(-5deg); }
+    25% { transform: translate(-10px, 0px) rotate(5deg); }
+    50% { transform: translate(10px, 0px) rotate(-5deg); }
+    75% { transform: translate(-10px, 0px) rotate(5deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}  
+.clickme {
+    position:absolute;
+    margin-left: 45%;
+    top:45%;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size:30px;
+    font-weight:bold;
+}
+@keyframes clickme {
+    0% {transform: scale(1.0); -webkit-transform: scale(1.0);}
+    1% {transform: scale(0.2); -webkit-transform: scale(0.2);}
+    33% {transform: translateY(80px) scale(0.5); -webkit-transform: translateY(80px) scale(0.5);}
+    66% {transform: translateY(75px) scale(0.5); -webkit-transform: translateY(75px) scale(0.5);}
+    100% {transform: translateY(80px) scale(0.5); -webkit-transform: translateY(80px) scale(0.5);}
+}  
+
+/* icon transitions */
+@keyframes exittop {
+    0% { transform:translateY(0px); }
+    100% { transform:translateY(-1000px); }
+}
+@keyframes specialboxslidein {
+    0% { transform:translateX(0px); }
+    100% { transform:translateX(1000px); }
+}
+@keyframes specialtitleslidein {
+    0% { transform:translateY(0px); }
+    100% { transform:translateY(135px); }
+}
+
+/* page contents */
+.titlecontainer {
+    position:absolute;
+    margin-left:auto; 
+    margin-right:auto; 
+    left:0; 
+    right:0; 
+}
+.title {
+    position:absolute;
+    background-image: linear-gradient(129.23deg, #00C2FF -8.03%, #3296FF 21.15%, #7659FF 54.06%, #DB00FF 108.41%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    cursor:pointer;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size:50px;
+    font-weight:bold;
+}
+
+.box {
+    position: absolute;
+    left:300px;
+    top:150px;
+    height:425px;
+    width:250px;
+    text-align:center;
+}
+
+.elementbuttons {
+    display: block;
+    padding: 12px;
+    margin:5px 0px 5px 0px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size:20px;
+    cursor:pointer;
+    color:white;
+    border-radius:12px;
+    background-color:#4D5EFD;
+    text-align:center;
+}
+.elementbuttons:hover {
+    background-color:#495af2;
+}
+.policybutton {
+    position:absolute;
+    left:81px;
+    bottom:50px;
+    text-decoration: underline;
+    color:#595959;
+    cursor:pointer;
+}
+.policybutton:active {
+    color:#808080;
+}
+@keyframes policybuttonslidein {
+    0% { transform:translateY(0px); }
+    100% { transform:translateY(30px); }
+}
+@keyframes policybuttonslideout {
+    0% { transform:translateY(0px); }
+    100% { transform:translateY(-30px); }
+}
+
+/* phone animations */
+.phonepic,
+.profilepic,
+.friendspic,
+.dmpic {
+    position: absolute;
+}
+
+.phonepiccontainer {
+    height:520px;
+    width:260px;
+    position:absolute;
+    overflow:hidden;
+}
+
+.phonepictransition1 {
+    animation: phoneslidein1 20s infinite;
+}
+.phonepictransition2 {
+    animation: phoneslidein2 20s infinite;
+}
+.phonepictransition3 {
+    animation: phoneslidein3 20s infinite;
+}
+.phonepictransition4 {
+    animation: phoneslidein4 20s infinite;
+}
+.phonepictransition5 {
+    animation: phoneslidein5 20s infinite;
+}
+@keyframes phoneslidein1 {
+    0% { transform:translateX(0px); }
+    5% { transform:translateX(0px); }
+    10% { transform:translateX(-300px); }
+    11% { transform:translate(-300px, 1000px); }
+    12% { transform:translate(300px, 1000px); }
+    84% { transform:translate(300px, 0px); }
+    85% { transform:translateX(300px); }
+    90% { transform:translateX(0px); }
+
+  }
+  @keyframes phoneslidein2 {
+    0% { transform:translateX(300px); }
+    5% { transform:translateX(300px); }
+    10% { transform:translateX(0px); }
+    25% { transform:translateX(0px); }
+    30% { transform:translateX(-300px); }
+    100% { transform:translateX(-300px); }
+  }
+  @keyframes phoneslidein3 {
+    0% { transform:translateX(300px); }
+    25% { transform:translateX(300px); }
+    30% { transform:translateX(0px); }
+    45% { transform:translateX(0px); }
+    50% { transform:translateX(-300px); }
+    100% { transform:translateX(-300px); }
+  }
+  @keyframes phoneslidein4 {
+    0% { transform:translateX(300px); }
+    45% { transform:translateX(300px); }
+    50% { transform:translateX(0px); }
+    65% { transform:translateX(0px); }
+    70% { transform:translateX(-300px); }
+    100% { transform:translateX(-300px); }
+  }
+  @keyframes phoneslidein5 {
+    0% { transform:translateX(300px); }
+    65% { transform:translateX(300px); }
+    70% { transform:translateX(0px); }
+    85% { transform:translateX(0px); }
+    90% { transform:translateX(-300px); }
+    100% { transform:translateX(-300px); }
+  }
+/* phones */
+@keyframes slideout1 {
+    0% { transform:translateX(0px); }
+    100% { transform:translateX(1400px); }
+}
+@keyframes slidein1 {
+    0% { transform:translateX(0px); }
+    100% { transform:translateX(-1400px); }
+}
+/* buttons */
+@keyframes slideout2 {
+    0% { transform:translateX(0px); }
+    100% { transform:translateX(-200px); }
+}
+@keyframes slidein2 {
+    0% { transform:translateX(0px); }
+    100% { transform:translateX(200px); }
+}
+/* element */
+@keyframes elementin {
+    0% { transform:translateY(0px); }
+    100% { transform:translateY(800px); }
+}
+@keyframes elementout {
+    0% { transform:translateY(0px); }
+    100% { transform:translateY(-800px); }
+}
+/* privacy */
+@keyframes elementin2 {
+    0% { transform:translateY(0px); }
+    100% { transform:translateY(-800px); }
+}
+@keyframes elementout2 {
+    0% { transform:translateY(0px); }
+    100% { transform:translateY(800px); }
+}
+
+/* scroll snap */
+.container {
+    scroll-snap-type:y mandatory;
+}
+.child {
+    scroll-snap-align: start;
+}
+.arrow {
+    position:absolute;
+    left:50%;
+    bottom:5%;
+    border: solid #7a7a7a;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    z-index:1;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* contents */
+.elementoverflow {
+    position:absolute;
+    left:500px;
+    top:125px;
+    height:500px;
+    width:800px;
+    overflow:hidden;
+}
+/* product */
+.product {
+    position:absolute;
+    top:-800px;
+    height:500px;
+    width:800px;
+    overflow:scroll;
+}
+/* aboutus */
+.aboutus {
+    position:absolute;
+    top:-800px;
+    height:500px;
+    width:800px;
+    overflow:scroll;
+}
+.dmyou {
+    position:absolute;
+    left:0;
+    max-width: 400px;
+    background: #f5f6ff;
+    border-radius: 0px 14px 14px 14px;
+}
+.dmus {
+    position:absolute;
+    right:0;
+    max-width: 400px;
+    background: #4D5EFD;
+    border-radius: 0px 14px 14px 14px;
+    color:white;
+}
+/* contactus */
+.contactus {
+    position:absolute;
+    top:-800px;
+    height:500px;
+    width:800px;
+    overflow:scroll;
+}
+.mediatext {
+    background-image: linear-gradient(129.23deg, #00C2FF -8.03%, #3296FF 21.15%, #7659FF 54.06%, #DB00FF 108.41%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    margin-top:9px;
+    cursor:pointer;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.fa-envelope,
+.fa-phone,
+.fa-instagram,
+.gradienttext {
+    background-image: linear-gradient(129.23deg, #00C2FF -8.03%, #3296FF 21.15%, #7659FF 54.06%, #DB00FF 108.41%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+a.media {
+    font-size: 40px;
+    padding: 20px 20px;
+    transition: .5s;
+    text-decoration: none;
+}
+a.media:hover {
+    font-size: 50px;
+    transition: .5s;
+}
+/* ambassador */
+.ambassador {
+    position:absolute;
+    top:-800px;
+    height:500px;
+    width:800px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    text-align:center;
+}
+/* privatepolicy  */
+.privatepolicy {
+    position:absolute;
+    top:800px;
+    height:500px;
+    width:800px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    text-align:center;
+}
+.graycontainer {
+    position:absolute; 
+    background-color:black; 
+    opacity:50%; 
+    height:500px; 
+    width:800px;
+}
+.whitecontainer {
+    position:absolute; 
+    z-index:1; 
+    background-color:white; 
+    height:450px; 
+    width:600px; 
+    left:100px; 
+    top:25px; 
+    border-radius:12px;
+}
+.xbutton {
+    position:absolute; 
+    top:0; 
+    left:5px;
+    border:none; 
+    background:none; 
+    font-size:25px; 
+    font-weight:bold;
+    color:#949494;
+    cursor:pointer;
+}
+.xbutton:active {
+    color:#616161;
+}
+.innerwhitecontainer {
+    position:absolute; 
+    width:500px; 
+    height:400px; 
+    top:25px; 
+    left:50px; 
+    border-radius:12px; 
+    font-size:10px;
+    text-align:left;
+    overflow:scroll;
+}
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}

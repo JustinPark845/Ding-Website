@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <!--Links included within the header-->
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href = "/static/styles.css" rel = "stylesheet">
+        <link rel="shortcut icon" type="image/jpg" href="/static/images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+        <title>D!ng</title>
+    </head>
+    <body>
+        <div class="titlepage">
+            <svg height="200" width="500" style="margin-top:8%;">
+                <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+                <text width="500">
+                    <textPath xlink:href="#curve">
+                        The Next Big Thing!
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <a href="#download">
+            <input type="image" src='../static/images/ding_icon.jpg' class="ding_icon">
+        </a>
+        <div class="ding_icon_clickmebox">
+            <div class="ding_icon_clickme">
+                Click me!
+            </div>
+        </div>
+        <!--Navigation Bar-->
+        <div class="navigationbar">
+            <ul>
+                <li>
+                    <form action="" method="get" style="display: inline-block;">
+                        <input type="image" img src='../static/images/ding_logo.JPG' alt="submit" class="ding_logo">
+                    </form>
+                </li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#ourproduct">Our Product</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#ambassador">Apply</a></li>
+            </ul>
+        </div>
+        <!--Individual blocks of content-->
+        <div id="download" class= 'box absolute' style="height:40vh; z-index:1; !important">
+            <div class="text">
+                Share What's Important To You
+            </div>
+            <div style="width:25%; margin:auto; left:35%;">
+                Word words words words words words words words words
+                This app is really great because of this and that 
+                and this and that.
+            </div>
+            <form action="https://www.apple.com/app-store/" method="get">
+                <input class="button" type="submit" value="Get the App">
+            </form>
+            <img class="friendspic" src="../static/images/Mockup_Friends.png" width="15%" height="150%" style="transform:rotate(-40deg); right:200px; top:21%"></img>
+            <img class="dmpic" src="../static/images/Mockup_DM.png" width="15%" height="150%" style="transform:rotate(-20deg); right:150px; top:20%"></img>
+            <img class="profilepic" src="../static/images/Mockup_Home.png" width="15%" height="150%" style="right:100px; top:22%"></img>
+        </div>
+        <!--InvisBox-->
+            <div class= 'downloadinvisbox'></div>
+        <!--Each future iteration of the element is slightly altered for style, but largely the same format-->
+            <div class="emptybox"></div>
+            
+        <!--Next iteraation-->
+            <div id="ourproduct" class= 'box off absolute'>
+                <div class="text">Interactive Phone Scroll Component</div>
+                    <div class="phonepiccontainer">
+                        <img class="phonepic phonepictransition1" src="../static/images/Mockup_Splash.png" width="200vh" height="400vh">
+                        <img class="phonepic phonepictransition2" src="../static/images/Mockup_DM.png" width="200vh" height="400vh">
+                        <img class="phonepic phonepictransition3" src="../static/images/Mockup_Friends.png" width="200vh" height="400vh">
+                        <img class="phonepic phonepictransition4" src="../static/images/Mockup_Profile.png" width="200vh" height="400vh">
+                        <img class="phonepic phonepictransition5" src="../static/images/Mockup_Home.png" width="200vh" height="400vh">
+                    </div>
+                    <div class="phoneparallax">
+                    </div>
+                </img>
+            </div>
+        <!--InvisBox-->
+            <div class= 'productinvisbox'></div>
+        <!--Next iteration-->
+            <div id="aboutus" class= 'miniaboutusbox absolute'>
+                <div style="font-size:50px; color:white;">
+                    About Us
+                </div>
+            <ul class="row">
+                <li class="col"><img src="../static/images/AboutUsImage.png" width="300vh" height="240vh"></img></li>
+                <li class="col">
+                    <div class="ourstorytitle">Our Story</div>
+                    <div class="ourstory">At Boston College, four undergraduates came upon and tried to address a simple problem: the lack of a centralized platform for how people connect with each other. On February 1, 2020, four undergraduates sat down to turn an idea into a reality. From that meeting, Ding was born.</div>
+                </li>
+            </ul>
+            </div>
+        <!--Next iteration-->
+            <div id="ambassador" class= 'miniambassadorbox absolute'>
+                <div class="ambassadortitle" style="text-align:center;">
+                    Apply to be a Campus Ambassador!
+                </div>
+                <div style="text-align:center color:white;">
+                    <form action="mailto:bestmetalturtle@gmail.com" method="post" enctype="text/plain">
+                    Name:<br>
+                    <input type="text" name="name"><br>
+                    E-mail:<br>
+                    <input type="text" name="mail"><br>
+                    Comment:<br>
+                    <input type="text" name="comment" size="50"><br><br>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                    </form>
+                </div>
+            </div>
+        <!--InvisBox-->
+            <div class= 'ambassadoraboutusinvisbox'></div>
+        </div>
+
+        <!--dividing line-->
+        <hr class="solid">
+        <!--social media-->
+        <div class="center">
+            <div class="mediafont">
+                Follow us on Social Media!
+            </div>
+            <a class = media href="https://www.instagram.com/thedingapp/?igshid=1xn6s7xxbjb1k"><i class="fab fa-instagram"></i></a>
+            <div>Email: thedingapp@gmail.com </div>
+            <div>Phone: (781)290-8952</div>
+        </div>
+    </body>
+</html>

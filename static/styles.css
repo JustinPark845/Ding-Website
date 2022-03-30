@@ -1,0 +1,318 @@
+@import url("//use.fontawesome.com/releases/v5.15.3/css/all.css");
+
+/* Global variables */
+html {
+    scroll-behavior: smooth;
+}
+.titlepage {
+    text-align: center;
+    font-family: 'Yomogi', cursive;
+    font-size: 43px;
+}
+
+path {
+    fill: transparent;
+}
+
+/* Title Page CSS */
+.ding_icon {
+    margin-left: 48%;
+    height: 8vh;
+    width: 8vh;
+    transition:.5s;
+    top:0;
+}
+.ding_icon_clickmebox {
+    margin-bottom: 25%;
+    text-align:center;
+    margin-top:1%;
+    overflow: hidden;
+    font-family: 'Yomogi', cursive;
+    font-size: 25px;
+}
+.ding_icon_clickme {
+    animation: slidein 1s;
+    animation-delay: 5s;
+}
+@keyframes slidein {
+    0% { transform:translateY(50px); }
+    100% { transform:translateY(0px); }
+  }
+
+.ding_icon:hover {
+    height:10vh;
+    width:10vh;
+    animation: ring .5s;
+    animation-iteration-count: 1;
+    transition:.25s;
+    margin-left:47.5%;
+}
+  
+@keyframes ring {
+    0% { transform: translate(10px, 0px) rotate(-5deg); }
+    25% { transform: translate(-10px, 0px) rotate(5deg); }
+    50% { transform: translate(10px, 0px) rotate(-5deg); }
+    75% { transform: translate(-10px, 0px) rotate(5deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+  }
+
+/* Index CSS */
+/* Navigation Elements */
+.navigationbar {
+    position:sticky;
+    top:0;
+    height:7vh;
+    background-color:#b720ff;
+    min-height:30px;
+    overflow:hidden;
+    border-radius: 150px 150px 150px 150px;
+    z-index:3;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:inline-block;
+}
+
+li {
+    float: left;
+}
+  
+li a {
+    color:white;
+    display: block;
+    padding-top: 2vh;
+    padding-bottom:2.8vh;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+li a:hover {
+    text-decoration: none;
+    background-color: #D87CFF;
+    color:black;
+}
+
+.ding_logo {
+    text-align:left;
+    height:7vh;
+    min-height:30px;
+}
+
+:root {
+  --contrast-color: #D87CFF;
+  --contrast-color2: #c36bf2;
+}
+
+/*Style for the elements within the sliding transitions*/
+.box {
+  height: 90vh;
+  border-radius: 150px 0px 0px 150px;
+  background-color: var(--contrast-color);
+  overflow: hidden;
+  width:100%;
+}
+
+.emptybox {
+    height: 90vh;
+    background-color: #f3d4ff;
+    overflow: hidden;
+    width:100%;
+    border-radius: 150px 150px 150px 150px;
+}
+.miniaboutusbox {
+    text-align:center; 
+    height:60vh; 
+    width: 50%; 
+    right: 0; 
+    border-radius: 100px 0px 0px 100px; 
+    background-color:#c36bf2;
+    overflow: hidden;
+}
+
+.miniambassadorbox {
+    height:60vh; 
+    width:50%; 
+    left: 0; 
+    border-radius: 0px 100px 100px 0px; 
+    background-color:#D87CFF;
+    overflow: hidden;
+}
+
+.off {
+  background-color: var(--contrast-color2);
+  border-radius: 0px 150px 150px 0px;
+}
+
+.text {
+    font-family: 'Yomogi', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+/* Invisible div for position absolute */
+.downloadinvisbox {
+    height:40vh;
+}
+.productinvisbox {
+    height: 90vh;
+  }
+.ambassadoraboutusinvisbox {
+    height: 60vh;
+}
+
+.absolute, 
+.phonepic,
+.profilepic,
+.friendspic,
+.dmpic {
+    position: absolute;
+}
+
+.phonepiccontainer {
+    height:60vh;
+    width:30vh;
+    position:absoluxte;
+    left:10%; 
+    top:25%;
+    overflow:hidden;
+}
+
+.phonepictransition1 {
+    animation: slidein1 20s infinite;
+}
+.phonepictransition2 {
+    animation: slidein2 20s infinite;
+}
+.phonepictransition3 {
+    animation: slidein3 20s infinite;
+}
+.phonepictransition4 {
+    animation: slidein4 20s infinite;
+}
+.phonepictransition5 {
+    animation: slidein5 20s infinite;
+}
+@keyframes slidein1 {
+    0% { transform:translateX(0px); }
+    5% { transform:translateX(0px); }
+    10% { transform:translateX(-300px); }
+    11% { transform:translate(-300px, 1000px); }
+    12% { transform:translate(300px, 1000px); }
+    84% { transform:translate(300px, 0px); }
+    85% { transform:translateX(300px); }
+    90% { transform:translateX(0px); }
+
+  }
+  @keyframes slidein2 {
+    0% { transform:translateX(300px); }
+    5% { transform:translateX(300px); }
+    10% { transform:translateX(0px); }
+    25% { transform:translateX(0px); }
+    30% { transform:translateX(-300px); }
+    100% { transform:translateX(-300px); }
+  }
+  @keyframes slidein3 {
+    0% { transform:translateX(300px); }
+    25% { transform:translateX(300px); }
+    30% { transform:translateX(0px); }
+    45% { transform:translateX(0px); }
+    50% { transform:translateX(-300px); }
+    100% { transform:translateX(-300px); }
+  }
+  @keyframes slidein4 {
+    0% { transform:translateX(300px); }
+    45% { transform:translateX(300px); }
+    50% { transform:translateX(0px); }
+    65% { transform:translateX(0px); }
+    70% { transform:translateX(-300px); }
+    100% { transform:translateX(-300px); }
+  }
+  @keyframes slidein5 {
+    0% { transform:translateX(300px); }
+    65% { transform:translateX(300px); }
+    70% { transform:translateX(0px); }
+    85% { transform:translateX(0px); }
+    90% { transform:translateX(-300px); }
+    100% { transform:translateX(-300px); }
+  }
+
+.button {
+    background-color:blueviolet;
+    color:white;
+    padding:5px;
+    border:none;
+    left:45%;
+    top:30%;
+    position:absolute;
+    margin-top:70px;
+}
+.button:active {
+    background-color:white;
+    color:black;
+}
+
+.ambassadortitle,
+.ourstorytitle {
+    width:70%;
+    color:white;
+    font-size:5vh;
+    font-family: 'Yomogi', cursive;
+}
+.ourstory {
+    width:70%;
+    color:white;
+    text-align:center;
+    font-family: 'Yomogi', cursive;
+}
+
+.row {
+    display: flex; /* equal height of the children */
+}
+  
+.col {
+    flex: 1; /* additionally, equal width */
+    padding: 1em;
+}
+
+/* .phoneparallax {
+    height:90%;
+    width:90%;
+    background-color:blue;
+} */
+
+
+
+
+.solid {
+  border-top: 1px solid #D87CFF;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.center {
+    text-align: center;
+}
+
+.mediafont {
+    font-size:25px;
+}
+
+a.media {
+    margin-left: 48%;
+    font-size: 50px;
+    padding: 20px 20px;
+    color: #bc1cff;
+    transition: .5s;
+}
+
+a.media:hover {
+    text-decoration: none;
+    font-size: 70px;
+    color: #D87CFF;
+    margin-left: 47.5%;
+    transition: .5s;
+}
